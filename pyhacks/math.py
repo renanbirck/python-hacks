@@ -3,12 +3,13 @@
 #
 # python-hacks: A bunch of small hacks and snippets that I found useful.
 
-
-
 def getSpectrum(y,Fs):
     """
     Does the FFT of signal y, sampled at Fs samples per second,
     and returns a list of tuples (frequency,value).
+    
+    Mostly based upon 
+    http://glowingpython.blogspot.com.br/2011/08/how-to-plot-frequency-spectrum-with.html
     """
     n = len(y) # length of the signal
     k = arange(n)
